@@ -18,7 +18,7 @@ export default MovieMain;
 const MovieMainBlock = styled.div`
     height: 500px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     overflow: hidden;
 
     img{
