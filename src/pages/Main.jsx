@@ -1,5 +1,5 @@
 import React from 'react'
-import Movie from '../components/Movie'
+import Movie from '../components/main/Movie'
 import styled from 'styled-components';
 
 function Main() {
@@ -14,5 +14,7 @@ export default Main;
 
 const MainBlock = styled.div`
     width: 85%;
-    margin: 0 auto;
+    margin: auto;
+    position: relative;
+    top: 100px;
 `;
