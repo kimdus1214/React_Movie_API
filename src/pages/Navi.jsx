@@ -6,6 +6,7 @@ function Navi() {
     return (
         <NaviBlock>
             <NaviNav><NavLink to="/">Home</NavLink></NaviNav>
+            <NaviNav><NavLink to="/login">로그인</NavLink></NaviNav>
         </NaviBlock>
     )
 }
@@ -17,10 +18,13 @@ const NaviBlock = styled.ul`
     position: fixed;
     height: 80px;
     box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, .2);
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     z-index: 999;
     background: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
 `;
 const NaviNav = styled.li`
     height: 100px;
