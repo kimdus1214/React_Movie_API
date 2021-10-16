@@ -1,12 +1,17 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import styled from 'styled-components'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import LogoutBtn from '../components/LogoutBtn';
 
 function Navi() {
+    let changeBtn = window.localStorage.getItem("userid");
     return (
         <NaviBlock>
-            <NaviNav><NavLink to="/">Home</NavLink></NaviNav>
-            <NaviNav><NavLink to="/login">로그인</NavLink></NaviNav>
+            <NaviNav><NavLink to="/" style={{color:"#000", textDecoration:"none"}}>Home</NavLink></NaviNav>
+            <NaviNav>
+                <NavLink to="/login" style={{color:"#000", textDecoration:"none"}}>로그인</NavLink>
+                {/* {changeBtn ? <LogoutBtn>로그아웃</LogoutBtn> : <NavLink to="/login" style={{color:"#000", textDecoration:"none"}}>로그인</NavLink>} */}
+            </NaviNav>
         </NaviBlock>
     )
 }

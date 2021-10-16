@@ -48,7 +48,7 @@ function Login({history}){
                 <Form type="text" placeholder="아이디" name="userid" value={userid} onChange={onChange}/>
                 <Form type="password" placeholder="비밀번호" name="userpw" value={userpw} onChange={onChange}/>
                 <FormBtn type="submit">로그인</FormBtn>
-                <p>회원이 아니신가요? <Link to="/register">회원가입</Link></p>
+                <p>회원이 아니신가요? <Link to="/register" style={{color:"#0070C0", textDecoration:"none", fontWeight:"bold"}}>회원가입</Link></p>
             </FormBlock>            
         </>
     );
